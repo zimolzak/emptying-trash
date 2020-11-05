@@ -1,0 +1,5 @@
+library(here)
+library(ggplot2)
+X = read.csv(here('mb_free.txt'))
+# X = read.csv('~/Desktop/emptying-trash/mb_free.txt')
+qplot(x=timenocolon, y=megabytes, data=X)
