@@ -18,4 +18,4 @@ eta = round((250000 - b) / m, 2)
 # 250 = m * x + b
 # (250 - b) / m = x
 
-qplot(x= hours, y=megabytes, data=X) + geom_abline(slope=m, intercept=b) + labs(title=paste(mround, 'MB per hr'), subtitle = paste(eta, 'ETA')) + xlim(10,25) + ylim(NA, 250000)
+qplot(x= hours, y=megabytes, data=X) + geom_abline(slope=m, intercept=b) + labs(title=paste(mround, 'MB per hr'), subtitle = paste(eta, 'ETA')) + xlim(10,25) + ylim(NA, 250000) + geom_smooth()
