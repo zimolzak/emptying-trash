@@ -20,4 +20,4 @@ eta = round((goal_mebi - b) / m, 2)
 # 250 = m * x + b
 # (250 - b) / m = x
 
-qplot(x= hours, y=megabytes, data=X) + geom_abline(slope=m, intercept=b) + labs(title=paste(mround, 'MiB per hr'), subtitle = paste(eta, 'ETA'), y = 'Available space (MiB)') + xlim(10,30) + ylim(NA, goal_mebi) + geom_smooth() + geom_hline(yintercept = goal_mebi)
+qplot(x= hours, y=megabytes, data=X) + geom_abline(slope=m, intercept=b) + labs(title=paste(mround, 'MiB per hr'), subtitle = paste(eta, 'ETA'), y = 'Available space (MiB)') + xlim(10,35) + ylim(NA, 270000) + geom_smooth() + geom_hline(yintercept = goal_mebi)
